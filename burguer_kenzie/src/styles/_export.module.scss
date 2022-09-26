@@ -1,0 +1,15 @@
+@import "./variables";
+
+:export {
+  colorPrimary: $color-primary;
+  colorPrimary50: $color-primary-50;
+  colorSecondary: $color-secondary;
+  gray100: $gray-100;
+  gray50: $gray-50;
+  gray20: $gray-20;
+  gray0: $gray-0;
+  negative: $negative;
+  warning: $warning;
+  success: $success;
+  information: $information;
+}
