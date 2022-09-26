@@ -8,8 +8,10 @@ const App = () => {
     <div>
       <GlobalStyle />
       <Header />
-      <ProductList />
-      <Cart />
+      <div>
+        <ProductList />
+        <Cart />
+      </div>
     </div>
   );
 };
