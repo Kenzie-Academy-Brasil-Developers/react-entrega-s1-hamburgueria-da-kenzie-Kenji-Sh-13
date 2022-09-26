@@ -1,4 +1,6 @@
 .products_list {
     display: flex;
+    padding: 0 16px 16px 16px;
+    gap: 20px;
     overflow-x: auto;
 }
