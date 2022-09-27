@@ -21,7 +21,6 @@ const App = () => {
           ...cartList,
           ...productList.filter((product) => product["id"] == productId),
         ]);
-        console.log(cartList)
   };
 
   return (
@@ -30,7 +29,7 @@ const App = () => {
       <Header />
       <div>
         <ProductList productList={productList} handleClick={handleClick} />
-        <Cart cartList={cartList} />
+        <Cart cartList={cartList} setCartList={setCartList} />
       </div>
     </div>
   );

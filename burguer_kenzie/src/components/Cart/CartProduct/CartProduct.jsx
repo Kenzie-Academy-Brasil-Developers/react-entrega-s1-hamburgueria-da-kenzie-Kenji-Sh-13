@@ -1,8 +1,7 @@
-import teste from "../../../ham.png";
 import { RemoveButton } from "../../Button/Button.style";
 import styles from "./CartProduct.module.scss";
 
-const CartProduct = ({id, name, category, img}) => {
+const CartProduct = ({ id, name, category, img, removeProduct }) => {
   return (
     <li id={id} className={styles["cart_product_card"]}>
       <figure>
@@ -12,7 +11,7 @@ const CartProduct = ({id, name, category, img}) => {
         <h2>{name}</h2>
         <p>{category}</p>
       </div>
-      <RemoveButton>Remover</RemoveButton>
+      <RemoveButton onClick={() => removeProduct(id)}>Remover</RemoveButton>
     </li>
   );
 };

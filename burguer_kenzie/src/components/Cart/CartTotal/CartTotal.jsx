@@ -1,7 +1,7 @@
 import { RemoveAllButton } from "../../Button/Button.style";
 import styles from "./CartTotal.module.scss";
 
-const CartTotal = ({ cartList }) => {
+const CartTotal = ({ cartList, removeAllProducts }) => {
   return (
     <div className={styles["cart_total"]}>
       <div>
@@ -15,7 +15,9 @@ const CartTotal = ({ cartList }) => {
             })}
         </p>
       </div>
-      <RemoveAllButton>Remover tudo</RemoveAllButton>
+      <RemoveAllButton onClick={removeAllProducts}>
+        Remover tudo
+      </RemoveAllButton>
     </div>
   );
 };
