@@ -6,8 +6,14 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     font-family: 'Inter', sans-serif;
+    padding-bottom: 42px;
+}
+
+button {
+    cursor: pointer;
 }
 
 ul {

@@ -1,0 +1,9 @@
+@media (min-width: 768px) {
+  .teste {
+    > div {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+    }
+  }
+}
