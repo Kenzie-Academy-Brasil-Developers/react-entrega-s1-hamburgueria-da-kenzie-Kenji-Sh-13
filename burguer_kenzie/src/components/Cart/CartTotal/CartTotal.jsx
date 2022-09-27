@@ -1,3 +1,4 @@
+import { RemoveAllButton } from "../../Button/Button.style";
 import styles from "./CartTotal.module.scss";
 
 const CartTotal = () => {
@@ -7,7 +8,7 @@ const CartTotal = () => {
         <p>Total</p>
         <p>R$ 40,00</p>
       </div>
-      <button>Remover tudo</button>
+      <RemoveAllButton>Remover tudo</RemoveAllButton>
     </div>
   );
 };

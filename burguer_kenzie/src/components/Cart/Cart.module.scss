@@ -1,7 +1,7 @@
 @import "../../styles/variables.scss";
 
 .cart {
-  max-width: 365px;
+  max-width: 100%;
   margin: 0 auto;
   margin-top: 20px;
   padding: 0 16px;
@@ -20,9 +20,6 @@
     padding: 16px;
   }
 
-  > div {
-    height: 104px;
-  }
   p {
     font-size: 18px;
     font-weight: 700;
@@ -48,6 +45,8 @@
   }
 
   @media (min-width: 768px) {
-    width: 35%;
+    min-width: 365px;
+    margin: 0;
+    padding-left: 0;
   }
 }

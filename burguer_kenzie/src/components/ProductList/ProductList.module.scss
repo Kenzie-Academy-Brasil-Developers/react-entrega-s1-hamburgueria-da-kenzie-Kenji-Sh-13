@@ -1,11 +1,14 @@
 .products_list {
   display: flex;
+  // max-width: 65%;
   min-height: 362px;
   padding: 0 16px 16px 16px;
   gap: 20px;
   overflow-x: auto;
 
   @media (min-width: 768px) {
-    width: 65%;
+    flex-wrap: wrap;
+    padding-right: 0;
+    padding-bottom: 0;
   }
 }
