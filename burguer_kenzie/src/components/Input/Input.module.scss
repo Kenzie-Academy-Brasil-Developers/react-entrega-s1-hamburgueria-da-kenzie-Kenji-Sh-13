@@ -1,0 +1,13 @@
+.input_search {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .input_search {
+    max-width: 365px;
+  }
+}

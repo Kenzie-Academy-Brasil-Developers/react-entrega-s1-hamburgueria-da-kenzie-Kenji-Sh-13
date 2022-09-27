@@ -1,0 +1,12 @@
+@import "../../../styles/variables.scss";
+
+.logo {
+  font-size: 26px;
+  font-weight: bold;
+
+  span {
+    font-size: 18px;
+    font-weight: bold;
+    color: $color-secondary;
+  }
+}
