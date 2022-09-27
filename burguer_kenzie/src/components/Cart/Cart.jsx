@@ -7,7 +7,6 @@ const Cart = ({ cartList, setCartList }) => {
     setCartList((prevCartList) => {
       return prevCartList.filter((product) => productId !== product["id"]);
     });
-    console.log(cartList);
   };
 
   const removeAllProducts = () => {

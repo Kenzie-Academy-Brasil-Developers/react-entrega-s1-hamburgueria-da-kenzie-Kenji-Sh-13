@@ -2,11 +2,11 @@ import Logo from "./Logo/Logo";
 import InputSearch from "../Input/Input";
 import styles from "./Header.module.scss";
 
-const Header = () => {
+const Header = ({ setFilter }) => {
   return (
     <header className={styles["nav_menu"]}>
       <Logo />
-      <InputSearch />
+      <InputSearch setFilter={setFilter} />
     </header>
   );
 };

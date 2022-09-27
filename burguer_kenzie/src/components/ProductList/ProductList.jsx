@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Product from "./Product/Product";
 import CircleLoader from "../CircleLoader/CircleLoader";
 
