@@ -13,6 +13,9 @@ export const ProductCard = styled.li`
     height: 45%;
     background-color: ${styles.gray0};
   }
+  img {
+    height: 100%;
+  }
   div {
     display: flex;
     flex-direction: column;

@@ -1,18 +1,22 @@
 import { ProductCard } from "./Product.style";
 import { StyledButton } from "../../Button/Button.style";
-import teste from "../../../assets/202109090436_skn5yx754p 1.png";
 
-const Product = () => {
+const Product = ({ id, name, category, price, img }) => {
   return (
     <ProductCard>
       <figure>
-        <img src={teste} alt="product" />
+        <img src={img} alt={name} />
       </figure>
       <div>
-        <h2>Hamburguer</h2>
-        <span>Sanduíches</span>
-        <p>R$ 14,00</p>
-        <StyledButton>Adicionar</StyledButton>
+        <h2>{name}</h2>
+        <span>{category}</span>
+        <p>
+          {price.toLocaleString("pt-BR", {
+            style: "currency",
+            currency: "BRL",
+          })}
+        </p>
+        <StyledButton id={id}>Adicionar</StyledButton>
       </div>
     </ProductCard>
   );
