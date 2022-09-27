@@ -12,6 +12,10 @@ body {
     padding-bottom: 42px;
 }
 
+button {
+    cursor: pointer;
+}
+
 ul {
     list-style: none;
 }

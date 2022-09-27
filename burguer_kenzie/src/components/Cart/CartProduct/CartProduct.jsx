@@ -2,15 +2,15 @@ import teste from "../../../ham.png";
 import { RemoveButton } from "../../Button/Button.style";
 import styles from "./CartProduct.module.scss";
 
-const CartProduct = () => {
+const CartProduct = ({id, name, category, img}) => {
   return (
-    <li className={styles["cart_product_card"]}>
+    <li id={id} className={styles["cart_product_card"]}>
       <figure>
-        <img src={teste} alt="" />
+        <img src={img} alt="" />
       </figure>
       <div>
-        <h2>Hamburguer</h2>
-        <p>Sanduíche</p>
+        <h2>{name}</h2>
+        <p>{category}</p>
       </div>
       <RemoveButton>Remover</RemoveButton>
     </li>

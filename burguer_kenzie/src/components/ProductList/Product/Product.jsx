@@ -1,7 +1,7 @@
 import { ProductCard } from "./Product.style";
 import { StyledButton } from "../../Button/Button.style";
 
-const Product = ({ id, name, category, price, img }) => {
+const Product = ({ id, name, category, price, img, handleClick }) => {
   return (
     <ProductCard>
       <figure>
@@ -16,7 +16,9 @@ const Product = ({ id, name, category, price, img }) => {
             currency: "BRL",
           })}
         </p>
-        <StyledButton id={id}>Adicionar</StyledButton>
+        <StyledButton id={id} onClick={(e) => handleClick(e.target.id)}>
+          Adicionar
+        </StyledButton>
       </div>
     </ProductCard>
   );

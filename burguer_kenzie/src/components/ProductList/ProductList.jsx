@@ -3,7 +3,7 @@ import CircleLoader from "../CircleLoader/CircleLoader";
 
 import styles from "./ProductList.module.scss";
 
-const ProductList = ({ productList }) => {
+const ProductList = ({ productList, handleClick }) => {
   return (
     <ul className={styles["products_list"]}>
       {productList ? (
@@ -15,6 +15,7 @@ const ProductList = ({ productList }) => {
             category={category}
             price={price}
             img={img}
+            handleClick={handleClick}
           />
         ))
       ) : (

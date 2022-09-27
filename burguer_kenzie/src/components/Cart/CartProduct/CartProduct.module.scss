@@ -3,13 +3,13 @@
 .cart_product_card {
   display: flex;
   justify-content: space-between;
+  width: 100%;
   max-width: 345px;
   height: 80px;
-  margin: 0 auto;
   gap: 10px;
 
   figure {
-    max-width: 80px;
+    min-width: 80px;
     border-radius: 8px;
     background-color: $gray-20;
   }
@@ -22,6 +22,7 @@
   div {
     display: flex;
     flex-direction: column;
+    width: 40%;
     padding: 8px 0;
     gap: 10px;
   }

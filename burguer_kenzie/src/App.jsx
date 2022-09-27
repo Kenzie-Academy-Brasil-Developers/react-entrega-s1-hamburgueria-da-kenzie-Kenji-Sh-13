@@ -12,15 +12,25 @@ const url = "https://hamburgueria-kenzie-json-serve.herokuapp.com/products";
 
 const App = () => {
   const { data: productList } = useFetch(url);
-  const [cartList, setCartList] = useState([1]);
+  const [cartList, setCartList] = useState([]);
+
+  const handleClick = (productId) => {
+    cartList.find((product) => product["id"] == productId)
+      ? ""
+      : setCartList([
+          ...cartList,
+          ...productList.filter((product) => product["id"] == productId),
+        ]);
+        console.log(cartList)
+  };
 
   return (
     <div className={styles["teste"]}>
       <GlobalStyle />
       <Header />
       <div>
-        <ProductList productList={productList} setCartList={setCartList} />
-        <Cart cartList={cartList} setCartList={setCartList} />
+        <ProductList productList={productList} handleClick={handleClick} />
+        <Cart cartList={cartList} />
       </div>
     </div>
   );
