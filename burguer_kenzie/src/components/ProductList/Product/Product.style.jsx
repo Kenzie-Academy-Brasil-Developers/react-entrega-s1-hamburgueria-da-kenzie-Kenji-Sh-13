@@ -1,4 +1,5 @@
 import styled from "styled-components";
+
 import styles from "../../../styles/_export.module.scss";
 
 export const ProductCard = styled.li`
@@ -11,14 +12,6 @@ export const ProductCard = styled.li`
 
   &:hover {
     border-color: ${styles.gray100};
-  }
-
-  @media (max-width: 1327px) {
-    width: 48%;
-  }
-
-  @media (max-width: 954px) {
-    width: 100%;
   }
 
   figure {
@@ -57,5 +50,13 @@ export const ProductCard = styled.li`
     font-size: 16px;
     font-weight: 600;
     color: ${styles.colorPrimary};
+  }
+
+  @media (max-width: 1327px) {
+    width: 48%;
+  }
+
+  @media (max-width: 954px) {
+    width: 100%;
   }
 `;
