@@ -39,7 +39,7 @@ const App = () => {
   };
 
   return (
-    <div className={styles["teste"]}>
+    <div className={styles["App"]}>
       <GlobalStyle />
       <Header setFilter={setFilter} />
       <div>
@@ -47,7 +47,7 @@ const App = () => {
           productList={filteredProductList ? filteredProductList : productList}
           handleClick={handleClick}
         />
-        <Cart cartList={cartList} setCartList={setCartList} />
+        <Cart cartList={cartList} setCartList={setCartList} toast={toast} />
       </div>
       <ToastContainer position="bottom-right" autoClose={3000} />
     </div>

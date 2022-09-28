@@ -1,4 +1,5 @@
 import styled from "styled-components";
+
 import styles from "../../styles/_export.module.scss";
 
 export const StyledButton = styled.button`
@@ -33,6 +34,18 @@ export const RemoveButton = styled.button`
   color: ${styles.gray50};
   background-color: transparent;
   transition: 0.3s;
+
+  ::after {
+    display: block;
+    content: "";
+    border-bottom: solid 2px ${styles.gray50};
+    transform: scaleX(0);
+    transition: 250ms ease-in-out;
+  }
+
+  :hover::after {
+    transform: scaleX(1);
+  }
 `;
 
 export const RemoveAllButton = styled(RemoveButton)`
