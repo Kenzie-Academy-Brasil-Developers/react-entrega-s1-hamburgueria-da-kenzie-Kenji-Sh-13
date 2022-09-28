@@ -1,8 +1,9 @@
-import styles from "./Cart.module.scss";
 import CartProduct from "./CartProduct/CartProduct";
 import CartTotal from "./CartTotal/CartTotal";
 
-const Cart = ({ cartList, setCartList }) => {
+import styles from "./Cart.module.scss";
+
+const Cart = ({ cartList, setCartList, toast }) => {
   const removeProduct = (productId) => {
     setCartList((prevCartList) => {
       return prevCartList.filter((product) => productId !== product["id"]);
@@ -11,6 +12,7 @@ const Cart = ({ cartList, setCartList }) => {
 
   const removeAllProducts = () => {
     setCartList([]);
+    toast.info("Todos os itens foram removidos do carrinho.")
   };
 
   return (

@@ -10,10 +10,8 @@
   padding: 1rem;
   gap: 12px;
   background-color: $gray-0;
-}
 
-@media (min-width: 768px) {
-  .nav_menu {
+  @media (min-width: 768px) {
     flex-direction: row;
     height: 80px;
   }

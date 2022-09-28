@@ -1,4 +1,5 @@
 import { RemoveButton } from "../../Button/Button.style";
+
 import styles from "./CartProduct.module.scss";
 
 const CartProduct = ({ id, name, category, img, removeProduct }) => {
