@@ -8,7 +8,6 @@ export const ProductCard = styled.li`
   border: solid 2px ${styles.gray20};
   border-radius: 8px;
   overflow: hidden;
-  transition: 0.3s;
 
   &:hover {
     border-color: ${styles.gray100};
@@ -52,11 +51,19 @@ export const ProductCard = styled.li`
     color: ${styles.colorPrimary};
   }
 
-  @media (max-width: 1327px) {
-    width: 48%;
+  @media (min-width: 768px) {
+    width: 100%;
+    min-width: 0;
+    transition: 0.3s;
   }
 
-  @media (max-width: 954px) {
-    width: 100%;
+  @media (min-width: 967px) {
+    width: 48%;
+    transition: 0.3s;
+  }
+
+  @media (min-width: 1100px) {
+    width: 31%;
+    transition: 0.3s;
   }
 `;
