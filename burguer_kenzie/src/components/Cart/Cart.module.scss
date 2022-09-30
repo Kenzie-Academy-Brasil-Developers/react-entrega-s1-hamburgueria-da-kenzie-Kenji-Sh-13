@@ -1,7 +1,7 @@
 @import "../../styles/variables.scss";
 
 .cart {
-  max-width: 100%;
+  max-width: 400px;
   margin: 0 auto;
   margin-top: 20px;
   padding: 0 16px;
@@ -26,7 +26,8 @@
     overflow-y: auto;
   }
 
-  p {
+  > p,
+  .nothing > p {
     font-size: 18px;
     font-weight: 700;
     line-height: 24px;
